@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    background-color: rgb(255 159 46);
+    /* color: white; */
+}
+#main-nav{
+
+    margin: 0px 20px;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.nav-ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 1s;
+}
+.nav-ul li a:hover{
+    text-decoration: underline;
+}
+/* landing */
+.landing{
+    min-height: 90vh;
+}
+
+/* user */
+.usernav li a{
+    color: white;
+    text-decoration: none;
+}
+.usernav li a:hover{
+    text-decoration: underline;
+}
+.services-buttons a{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services{
+    min-height: 50vh;
+}
+.services .service{
+    background-color: rgb(255, 214, 137);
+    border: 3px solid rgb(80, 39, 0);
+    border-radius: 20px;
+    padding: 20px;
+    width:100%;
+}
+.searchDiv{
+    min-height: 90vh;
+}
+.text-content{
+        width: 50%;
+}
+form{
+    width:50% ;
+}
+.profile-chang{
+    width: 50%;
+}
+@media (max-width:767px) {
+    
+    .landing{
+        flex-direction: column;
+    }
+    .text-content{
+        height: 70vh;
+        width: 100%;
+}
+form{
+    width:100% !important;
+}
+.nav-ul li a{
+    font-size: 17px;
+}
+.profile-chang{
+    width: 100%;
+}
+    
+}
